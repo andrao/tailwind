@@ -17,7 +17,7 @@
         "./tailwind.css": "./tailwind.css"
     },
     "scripts": {
-        "build": "rm -rf ./dist && tsc",
+        "build": "rm -rf ./dist && tsc --tsBuildInfoFile ./dist/tsconfig.tsbuildinfo",
         "format": "prettier --check .",
         "format:fix": "prettier --write .",
         "prepack": "pnpm run build",

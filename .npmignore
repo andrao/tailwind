@@ -4,10 +4,14 @@
 src
 
 # dev
+.env
 .github
 .husky
 .nvmrc
 .vscode
 .prettierignore
+jest.config.js
+patches
 prettier.config.js
 tsconfig.json
+tsconfig.tsbuildinfo
