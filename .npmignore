@@ -6,6 +6,7 @@ src
 # dev
 .github
 .husky
+.nvmrc
 .vscode
 .prettierignore
 prettier.config.js
