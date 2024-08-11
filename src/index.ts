@@ -1,6 +1,9 @@
 import type { Config } from 'tailwindcss';
 import animate from 'tailwindcss-animate';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import { BREAKPOINT_2XL } from './util';
+
+export type { Config } from 'tailwindcss';
 
 export default {
     darkMode: ['class'],
@@ -10,7 +13,7 @@ export default {
             center: true,
             padding: '2rem',
             screens: {
-                '2xl': '1400px',
+                '2xl': `${BREAKPOINT_2XL}px` as const,
             },
         },
         extend: {
