@@ -23,15 +23,13 @@ jobs:
             # Install pnpm globally
             - name: Install pnpm
               uses: pnpm/action-setup@v3
-              with:
-                  version: 8
 
             # Install Node.js & establish pnpm cache
             - name: Install Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: 20
-                  cache: 'pnpm'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             # Install repo dependencies
             - name: Install dependencies
@@ -53,15 +51,13 @@ jobs:
             # Install pnpm globally
             - name: Install pnpm
               uses: pnpm/action-setup@v3
-              with:
-                  version: 8
 
             # Install Node.js & establish pnpm cache
             - name: Install Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: 20
-                  cache: 'pnpm'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             # Install repo dependencies
             - name: Install dependencies
@@ -94,15 +90,13 @@ jobs:
             # Install pnpm globally
             - name: Install pnpm
               uses: pnpm/action-setup@v3
-              with:
-                  version: 8
 
             # Install Node.js & establish pnpm cache
             - name: Install Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: 20
-                  cache: 'pnpm'
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             # Install repo dependencies
             - name: Install dependencies
